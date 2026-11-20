@@ -1,0 +1,27 @@
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #111827;
+  margin: 0;
+}
+
+.bulb {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background-color: #374151;
+  animation: taso 2s infinite alternate ease-in-out;
+}
+
+@keyframes taso {
+  0% {
+    background-color: #374151;
+    box-shadow: none;
+  }
+  100% {
+    background-color: #facc15;
+    box-shadow: 0 0 40px #facc15;
+  }
+}

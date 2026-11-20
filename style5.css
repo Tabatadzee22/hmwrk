@@ -1,0 +1,25 @@
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #111;
+  margin: 0;
+}
+
+.heart {
+  font-size: 90px;
+  animation: taso 1s infinite ease-in-out;
+}
+
+@keyframes taso {
+  0%, 100% {
+    transform: scale(1);
+  }
+  30% {
+    transform: scale(1.3);
+  }
+  60% {
+    transform: scale(1.1);
+  }
+}

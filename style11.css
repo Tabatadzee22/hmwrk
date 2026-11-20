@@ -1,0 +1,49 @@
+body {
+  height: 100vh;
+  margin: 0;
+  background-color: #0f172a;
+  overflow: hidden;
+  position: relative;
+}
+
+.snow {
+  position: absolute;
+  top: -50px;
+  color: #ffffff;
+}
+.s1 {
+  left: 15%;
+  font-size: 20px;
+  animation: taso 5s infinite linear;
+}
+
+.s2 {
+  left: 35%;
+  font-size: 36px;
+  animation: taso 3s infinite linear;
+}
+
+.s3 {
+  left: 55%;
+  font-size: 24px;
+  animation: taso 6s infinite linear;
+}
+.s4 {
+  left: 75%;
+  font-size: 42px;
+  animation: taso 2.8s infinite linear;
+}
+
+.s5 {
+  left: 90%;
+  font-size: 28px;
+  animation: taso 4.2s infinite linear;
+}
+@keyframes taso {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+  100% {
+    transform: translateY(110vh) rotate(360deg);
+  }
+}

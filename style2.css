@@ -1,0 +1,25 @@
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0f172a;
+  margin: 0;
+}
+
+.box {
+  font-size: 90px;
+  animation: taso 6s infinite linear;
+}
+
+@keyframes taso {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  50% {
+    transform: rotate(180deg) scale(1.4);
+  }
+  100% {
+    transform: rotate(360deg) scale(1);
+  }
+}

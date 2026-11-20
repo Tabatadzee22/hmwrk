@@ -1,0 +1,36 @@
+body {
+  height: 100vh;
+  margin: 0;
+  background-color: black;
+  overflow: hidden;
+  position: relative;
+}
+
+.butterfly {
+  position: absolute;
+  top: 40%;
+  left: -120px;
+  width: 100px;
+  animation: taso 6s infinite linear, flap-taso 0.3s infinite alternate ease-in-out;
+}
+
+@keyframes taso {
+  0% {
+    transform: translateX(0) translateY(0);
+  }
+  50% {
+    transform: translateX(55vw) translateY(-40px);
+  }
+  100% {
+    transform: translateX(115vw) translateY(0);
+  }
+}
+
+@keyframes flap-taso {
+  0% {
+    scale: 1 1;
+  }
+  100% {
+    scale: 0.75 1;
+  }
+}
